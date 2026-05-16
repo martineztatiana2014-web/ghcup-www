@@ -48,6 +48,25 @@ Other tags include:
 - `prerelease`: a prerelease version
 - `latest-prerelease`: the latest prerelease version
 
+### Revisions
+
+In rare cases distributors need to fix the bindist or the ghcup metadata, without incuring
+an actual upstream release, but still make the end user update.
+
+This is handled via "revisions". Those are new bindists/metadata for the same upstream version. GHCup may alert
+you that there is a new revision available. E.g. for GHC:
+
+```
+✗  9.6.7-r1                                 latest
+✓  9.6.7-r0                                       
+```
+
+To update, just execute `ghcup install ghc 9.6.7` and it will automatically pick `-r1` and remove `-r0`.
+Only one revision can be installed at the same time.
+By default revisions are hidden from the TUI and `list` command.
+If you want to show them all run `ghcup list --show-revisions=all`.
+
+It is possible to install older revisions by specifying them explicitly, although that should never be necessary.
 
 ## Manpages
 
