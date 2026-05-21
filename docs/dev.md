@@ -97,7 +97,7 @@ Every subcommand now lives in its own module under [GHCup.OptParse.MyCommand](ht
 3. This refactor split up the huge `Main.hs` and put every subcommand in its own module: [#212](https://gitlab.haskell.org/haskell/ghcup-hs/-/merge_requests/212)
 4. This refactor added support for installing arbitrary tools. In that process a lot of code duplication was removed, the yaml format was extended in non-trivial ways and a lot of modules were moved around and added. The two main PRs are [Insaller DSL](https://github.com/haskell/ghcup-hs/pull/1315) and [Rework TUI](https://github.com/haskell/ghcup-hs/pull/1322).
 
-# Releasing
+## Releasing
 
 1. Update version in `ghcup.cabal`
 
@@ -127,7 +127,7 @@ Every subcommand now lives in its own module under [GHCup.OptParse.MyCommand](ht
 
 14. Post on reddit/discourse/etc. and collect rewards
 
-# Documentation
+## Documentation
 
 This documentation page is built via [mkdocs](https://www.mkdocs.org/), see `mkdocs.yml` and `docs/` subfolder.
 The module graph needs [graphmod](https://github.com/yav/graphmod) and is generated via `scripts/dev/modgraph.sh`.

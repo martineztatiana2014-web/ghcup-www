@@ -47,7 +47,9 @@ nav:
       - guide/compiling.md
       - guide/cross.md
       - guide/trouble.md
-  - "Packager Guide": packaging.md
+  - "Packager Guide":
+      - packaging/index.md
+      - packaging/new_tools.md
   - "Developer Guide": dev.md
   - About:
       - about/index.md
