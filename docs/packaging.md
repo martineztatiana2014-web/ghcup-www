@@ -276,11 +276,13 @@ ghcupDownloads:
 GHCup now supports using Dhall instead of yaml. GHCup can output the schema:
 
 ```sh
-ghcup generate-dhall-schema
+ghcup generate dhall-schema
 ```
 
 We will also host the types in the [ghcup-metadata repository](https://github.com/haskell/ghcup-metadata/tree/develop/dhall).
 
 Make sure to create a resolved dhall file (with no imports). GHCup will reject expressions that contain imports.
 Dhall binary format is also supported.
+
+Also check `ghcup generate --help` for further utilities.
 
